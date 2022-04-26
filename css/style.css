@@ -2,12 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(173, 228, 215);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+body {
+    background-image: linear-gradient(to right, rgb(200, 51, 51), rgb(45, 45, 174))
+}
+
 nav {
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right, rgb(221, 90, 90), rgb(58, 58, 198));
+    padding: 5px;
+    margin: 0px 153px;
+    outline: 1px solid rgb(48, 77, 149);
 }
 
 .simbolo-izq {
@@ -17,21 +25,28 @@ nav {
     height: 80px;
 }
 
-nav a {
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    border-color: rgb(20, 18, 18);
-    border-style: double;
-    padding: 10px;
-    margin: 10px;
-}
-
 .simbolo-der {
     position: absolute;
     right: 70px;
     width: 80px;
     height: 80px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.735);
+    border-color: rgb(20, 18, 18);
+    border-style:groove;
+    padding: 10px;
+    margin: 10px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.777), rgba(128, 128, 128, 0.754));
+    transition: color, 1s;
+}
+
+nav a:hover {
+    color: rgba(0, 0, 0, 0.652);
+    font-style: italic;
 }
 
 h1 {
@@ -41,21 +56,53 @@ h1 {
     text-decoration: underline;
 }
 
-h2 {
+.main-index h2 {
     text-align: center;
     font-size: 200%;
     text-decoration: underline;
     margin: 60px 350px 60px 0px;
 }
 
-section div {
+.main-index div {
     display: flex;
-    align-items: flex-end;
 }
 
-div p {
+.main-index div img {
+    height: 490px;
+    width: 900px;
+    padding: 0px 0px 0px 120px;
+}
+
+.main-index div p {
     font-size: 20px;
     line-height: 30px;
+    width: 400px;
+    margin-left: 300px;
+    padding: 15px;
+    text-align: center;
+    border: 3px double black;
 }
 
+.footer-index {
+    text-align: center;
+    border: 2px dashed black;
+    background-image: linear-gradient(to right, rgb(221, 90, 90), rgb(58, 58, 198));
+    border-color: rgb(20, 18, 18);
+    border-style:groove;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
+.footer-index h4 {
+    font-size: 25px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.footer-index a {
+    text-decoration: none;
+    color: rgb(49, 5, 91);
+    font-size: 22px;
+    margin: 0px 10px;
+}
